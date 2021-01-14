@@ -1,0 +1,103 @@
+@import '../../../../static/styles/colors.module.scss';
+
+.aside {
+	position: relative;
+	width: 300px;
+	margin-right: 25px;
+	background: $lightGrey;
+	border-radius: 5px;
+	padding: 0 10px 10px;
+	z-index: 2;
+}
+
+.outplace {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.asideContainer {
+	position: relative;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.asideTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 15px 15px 10px;
+	font-size: 16px;
+	background: $lightGrey;
+	cursor: pointer;
+
+	& > i {
+		color: #6d6d6dfa;
+		transform: rotate(90deg);
+	}
+}
+
+.asideElementsWrapper {
+	padding: 10px 0;
+}
+
+.asideElement {
+	padding: 5px 15px 5px 20px;
+	color: rgb(92, 92, 92);
+	font-size: 14px;
+	transition: all .07s ease-in-out;
+
+	&:hover {
+		background: rgba(110, 188, 99, .8);
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+.asideMoreButton {
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: center;
+	color: $green;
+	cursor: pointer;
+}
+
+.popularElements {
+	font-size: 12px;
+	color: $green;
+	margin-left: 10px;
+}
+
+/*************** DROPDOWN *********************/
+
+.asideDropdownList {
+	padding: 10px;
+	width: 400px;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+	background: #f9f9f9;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.asideDropdownListWrapper {
+	height: 92.5%;
+}
+
+.dropdownElementsWrapper {
+	height: 100%;
+	margin-top: 10px;
+	padding: 10px 0;
+	background: #fff;
+	border-radius: 5px;
+	overflow-y: auto;
+}
+
+@import './media.module.scss';

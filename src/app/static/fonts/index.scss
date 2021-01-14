@@ -1,0 +1,24 @@
+$regular: 'Roboto-Regular';
+$bold: 'Roboto-Bold';
+$light: 'Roboto-Light';
+$lightItalic: 'Roboto-LightItalic';
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  src: url('Roboto-LightItalic.ttf');
+}

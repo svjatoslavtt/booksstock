@@ -1,0 +1,112 @@
+@import "../../../static/fonts/index";
+@import "../../../static/styles/colors.module.scss";
+
+.container {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	max-width: 1600px;
+	width: 100%;
+	padding: 0 5%;
+	margin: 10px auto 10px;
+	border-radius: 5px;
+}
+
+.navbarPages {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 74%;
+}
+
+.headerLogo {
+  font-size: 40px;
+	font-family: $lightItalic;
+	width: 25%;
+}
+
+.pageLink {
+  font-size: 16px;
+	margin-right: 25px;
+	padding-bottom: 5px;
+}
+
+.linkActive {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		background: $green;
+	}
+}
+
+.navbarOwnData {
+	display: flex;
+	align-items: center;
+
+	& > a {
+		margin-right: 30px;
+	}
+}
+
+.cartWrapper {
+	position: relative;
+
+	.badge {
+		position: absolute;
+		top: -12px;
+    left: 15px;
+    padding: 0 7px;
+		border-radius: 25px;
+		font-size: 13px;
+		background: $green;
+    color: #fff;
+	}
+
+	& > svg {
+		margin-left: 30px;
+	}
+}
+
+.authLinks {
+	display: flex;
+	align-items: center;
+	
+	& > a {
+		position: relative;
+		margin-right: 15px;
+		font-size: 15px;
+	}
+
+	& > a:first-child {
+		&::after {
+			content: '/';
+			position: absolute;
+			right: -12px;
+			color: $darkGrey;
+		}
+	}
+}
+
+.menu {
+	position: relative;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.topHeaderWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.mobileLinks {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@import './media.style.scss';

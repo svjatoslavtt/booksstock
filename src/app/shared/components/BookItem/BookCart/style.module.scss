@@ -1,0 +1,137 @@
+@import '../../../../static/styles/colors.module.scss';
+@import '../../../../static/fonts/index.scss';
+
+.book {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 20px;
+}
+
+.bookImage {
+	display: flex;
+	justify-content: center;
+	width: 12%;
+	background: $lightGrey;
+	border-radius: 5px;
+	cursor: pointer;
+
+	& > img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+.bookContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 86%;
+}
+
+.bookInfo {
+	margin-bottom: 10px;
+}
+
+.bookHeadInfo {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	& > div:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.bookName {
+	width: 60%;
+	font-size: 15px;
+	color: $darkGrey;
+	font-family: $regular;
+	color: #3d70b2;
+}
+
+.bookAdditionalInfo {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	margin-bottom: 10px;
+
+	& > span {
+		margin-right: 15px;
+		margin-bottom: 5px;
+	}
+}
+
+.weight {
+	display: flex;
+	align-items: center;
+	color: #7d7d7d;
+	font-size: 13px;
+
+	& > i {
+		margin-right: 5px;
+		font-size: 12px;
+	}
+}
+
+.bookActions {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.sale {
+	display: flex;
+	align-items: center;
+	color: #7d7d7d;
+	font-family: $regular;
+	font-size: 13px;
+
+	& > i {
+		margin-right: 5px;
+		font-size: 15px;
+	}
+}
+
+.buttonsWrapper {
+	display: flex;
+	justify-content: flex-end;
+	width: 30%;
+	font-family: $light;
+}
+
+.saveBook {
+	margin-right: 30px;
+	font-size: 14px;
+	color: #3d70b2;
+	cursor: pointer;
+
+	& > i {
+		margin-right: 5px;
+		transition: transform .175s ease-in-out;
+	}
+
+	&:hover {
+		& > i {
+			transform: scale(1.15);
+			color: $red;
+		}
+	}
+}
+
+.deleteBook {
+	font-size: 14px;
+	color: grey;
+	cursor: pointer;
+
+	& > i {
+		margin-right: 5px;
+	}
+}
+
+@import './media.module.scss';

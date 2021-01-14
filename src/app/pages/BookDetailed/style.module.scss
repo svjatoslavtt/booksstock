@@ -1,0 +1,226 @@
+@import '../../static/styles/colors.module.scss';
+@import '../../static/fonts/index.scss';
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 1600px;
+	padding: 0 5%;
+	margin: 30px auto 50px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.avatar {
+	display: flex;
+	width: 25%;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: $lightGrey;
+	-webkit-box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+
+	& > img {
+		width: 100%;
+	}
+}
+
+.editButton {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all .125s ease-in-out;
+
+	&:hover {
+		background-color: #2a9d8f;
+
+		& > svg {
+			fill: #eee;
+		}
+	}
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	padding: 0 20px;
+	width: 74%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.title {
+	font-size: 24px;
+	margin-bottom: 5px;
+	font-family: $bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.bookInformationBlock {
+	background: #f2f9fa;
+	border-radius: 5px;
+	padding: 20px 25px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.inStock {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	color: $green;
+	font-family: $bold;
+	margin-bottom: 15px;
+
+	& > span {
+		margin-left: 8px;
+	}
+}
+
+.payment {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.paymentPrice {
+	display: flex;
+	align-items: flex-end;
+	font-size: 13px;
+}
+
+.currentPrice {
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+	font-size: 22px;
+	font-family: $bold;
+
+	& > span {
+		font-size: 18px;
+	}
+}
+
+.oldPrice {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 30px;
+
+	.sale {
+		padding: 2px 6px;
+		background: $red;
+		color: #fff;
+		font-family: $regular;
+		font-size: 13px;
+		border-radius: 5px;
+	}
+
+	& > span {
+		margin-left: 10px;
+		font-size: 15px;
+		color: #666;
+		text-decoration: line-through;
+	}
+}
+
+.paymentCount {
+	display: flex;
+	align-items: center;
+
+	& > i {
+		margin-right: 5px;
+		color: #a6a6a6;
+	}
+}
+
+.buyButton {
+	height: 40px;
+	padding: 0 30px;
+	background-color: $green;
+	color: $lightGrey;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-family: $bold;
+	outline: none;
+	transition: all .1s ease-in-out;
+
+	&:hover {
+		background-color: lighten($color: $green, $amount: 6);
+	}
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 5px;
+}
+
+.rateStars {
+	display: flex;
+	margin-right: 10px;
+}
+
+.ratingCounter {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.peopleRated {
+	margin-left: 5px;
+	font-size: 18px;
+	color: #7d8290;
+}
+
+.description {
+	padding: 40px 0 70px;
+	background-color: #f2f9fa;
+	-webkit-box-shadow: inset 0px 5px 22px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 5px 22px -19px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 5px 22px -19px rgba(0,0,0,0.75);
+
+}
+
+.descriptionContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1600px;
+	padding: 0 5%;
+	margin: 0 auto;
+
+	& > .title {
+		margin-bottom: 20px;
+	}
+
+	& > .text {
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 17px;
+		letter-spacing: 0.7px;
+    line-height: 1.6;
+	}
+}
+
+@import './media.module.scss';

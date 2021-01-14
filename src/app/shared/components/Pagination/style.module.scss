@@ -1,0 +1,72 @@
+@import "../../../static/styles/colors.module.scss";
+
+.paginationContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.paginationBlock {
+	display: flex;
+}
+
+.paginationPage, .paginationPageNextPrev {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35px;
+	height: 35px;
+	background: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+	transition: all .125s ease-in-out;
+
+	& > span {
+		color: #264653;
+		font-size: 14px;
+	}
+
+	&:hover {
+		background-color: $green;
+
+		& > span, svg {
+			fill: #eee;
+		}
+	}
+}
+
+.paginationPageNextPrev {
+	background-color: #264653;
+
+	& > svg {
+		fill: #eee;
+	}
+}
+
+.activePage {
+	background-color: $green;
+	
+	& > span {
+		color: #eee;
+	}
+}
+
+.paginationLastPage {
+	display: flex;
+	align-items: center;
+	height: 35px;
+	padding: 0 10px;
+	background-color: #fff;
+	color: #264653;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+@media all and (max-width: 500px) {
+	.paginationLastPage {
+		display: none;
+	}
+}

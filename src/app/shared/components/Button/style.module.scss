@@ -1,0 +1,24 @@
+@import "../../../static/styles/colors.module.scss"; 
+
+.button {
+  padding: 13px 15px;
+	background: $green;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+	border-radius: 25px;
+	margin: 0 auto;
+	display: block;
+	outline: none;
+	border: none;
+	width: 100%;
+
+  &:hover {
+    background: $buttonHover;
+  }
+
+  .span {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+}

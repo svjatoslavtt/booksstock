@@ -1,0 +1,14 @@
+.container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('../../static/images/sign-in.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+@import './media.module.scss';

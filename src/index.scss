@@ -1,0 +1,56 @@
+@import "app/static/fonts/index.scss";
+@import "app/static/styles/colors.module.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+div, span, body, html, ul, li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+	margin: 0 auto;
+  background: #fff;
+  font-family: $regular;
+  color: $darkGrey;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+
+input, textarea {
+  height: 35px;
+  width: 100%;
+  padding: 0 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid $lightGrey;
+	font-family: $light;
+	box-sizing: border-box;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	border: 1px solid #ccc;
+}
+
+textarea {
+	resize: none;
+	padding: 15px;
+	height: 150px;
+}
+
+a {
+  color: $darkGrey;
+  text-decoration: none;
+}
+
+svg {
+	cursor: pointer;
+	fill: $darkGrey;
+}
+
+ul {
+	list-style: none;
+}

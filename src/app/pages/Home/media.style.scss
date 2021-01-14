@@ -1,0 +1,69 @@
+@media all and (max-width: 1000px) {
+	.categories {
+		display: none;
+	}
+
+	.postersWrapper {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.recommended {
+		flex-direction: column;
+		margin-bottom: 40px;	
+	}
+
+	.recommendedItem {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+@media all and (max-width: 600px) {
+	.posters {
+		margin: 0 auto 15px;
+	}
+
+	.search {
+		height: initial;
+		flex-direction: column;
+		border: none;
+	}
+
+	.searchWrapper {
+		height: 45px;
+	}
+
+	.searchingInput {
+		width: 80%;
+		overflow: initial;
+		height: 100%;
+		border: 1px solid $grey;
+
+		& > input {
+			height: 100%;
+		}
+	}
+
+	.searchingButton {
+		width: 20%;
+	}
+
+	.genres {
+		width: 100%;
+		height: 40px;
+		border: 1px solid $grey;
+		border-top: none;
+	}
+
+	.recommendedTitle {
+		font-size: 26px;
+	}
+
+	.recommendedInfo {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+	}
+}
