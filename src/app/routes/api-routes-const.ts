@@ -1,8 +1,10 @@
 export enum ApiEndPoints {
   LOGIN = '/api/auth/login',
 	REGISTER = '/api/auth/register',
+
+	GET_DISCOUNT_BOOKS = '/api/book/discount-books',
 	
-	GET_FILMS = '/api/book/news-feed',
+	GET_FILMS = '/api/book/books',
 	GET_MY_FILMS = '/api/book/my-books',
 	GET_MY_LIKES_FILMS = '/api/book/my-likes',
 	GET_CURRENT_FILM = '/api/book/detailed',
@@ -10,8 +12,8 @@ export enum ApiEndPoints {
 
 	FILM_UPLOAD = '/api/book-upload',
 
-	LIKE_FILM = '/api/likes/like',
-	DISLIKE_FILM = '/api/likes/dislike',
+	SAVE_BOOK = '/api/action/save',
+	REMOVE_SAVED_BOOK = '/api/action/remove-saved',
 
 	RATE_FILM = '/api/rate',
 
