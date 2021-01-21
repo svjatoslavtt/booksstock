@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c1f237183730439bb1e1c418712b129",
+    "revision": "25e91db47674d4377c969bf90667d5cd",
     "url": "/booksstock/index.html"
   },
   {
-    "revision": "f897c519dc051e63a605",
+    "revision": "c3e3f441bf97bbad0867",
     "url": "/booksstock/static/css/2.de26ae72.chunk.css"
   },
   {
-    "revision": "b5df0517e53159175eae",
-    "url": "/booksstock/static/css/main.f9f26eeb.chunk.css"
+    "revision": "5fc3bf7b80791ea15e6a",
+    "url": "/booksstock/static/css/main.55498521.chunk.css"
   },
   {
-    "revision": "f897c519dc051e63a605",
-    "url": "/booksstock/static/js/2.4e8640a8.chunk.js"
+    "revision": "c3e3f441bf97bbad0867",
+    "url": "/booksstock/static/js/2.617baf49.chunk.js"
   },
   {
-    "revision": "e3cddcc14d0b349b4e6eccba623e55ae",
-    "url": "/booksstock/static/js/2.4e8640a8.chunk.js.LICENSE.txt"
+    "revision": "47443401be3cfeb14f0c199b46ba616c",
+    "url": "/booksstock/static/js/2.617baf49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5df0517e53159175eae",
-    "url": "/booksstock/static/js/main.4478f247.chunk.js"
+    "revision": "5fc3bf7b80791ea15e6a",
+    "url": "/booksstock/static/js/main.c983a4ff.chunk.js"
   },
   {
     "revision": "5a895d9bfba105b0a8af",
@@ -46,26 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c64fcb0e683b40b91ec2b75b0cf41034",
     "url": "/booksstock/static/media/announcement.c64fcb0e.webp"
-  },
-  {
-    "revision": "bed967fa55728b37b7ae7444caa021e4",
-    "url": "/booksstock/static/media/book-image1.bed967fa.webp"
-  },
-  {
-    "revision": "51e979bd3e5a2665203509eac7e0fc7b",
-    "url": "/booksstock/static/media/book-image2.51e979bd.webp"
-  },
-  {
-    "revision": "c4d40b00bbdb3d6b567fd027340fabda",
-    "url": "/booksstock/static/media/book-image3.c4d40b00.webp"
-  },
-  {
-    "revision": "71c2ce9317452394bc112a73c34b487a",
-    "url": "/booksstock/static/media/book-image4.71c2ce93.webp"
-  },
-  {
-    "revision": "1e72c7cbb85618d957162c2bf32d5aba",
-    "url": "/booksstock/static/media/book-image5.1e72c7cb.webp"
   },
   {
     "revision": "13b621c6b3722cd1a9ccaca4bca96c8e",
